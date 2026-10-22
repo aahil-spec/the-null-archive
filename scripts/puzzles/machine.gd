@@ -21,3 +21,6 @@ func interact():
 			return "ALL STAGES LINKED. DOOR OPENED."
 		return "MACHINE STAGE " + str(current_stage) + " ACTIVATED."
 	return "MACHINE ALREADY ACTIVE."
+func power_off():
+	is_powered=false
+	current_stage=0

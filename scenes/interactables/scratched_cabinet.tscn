@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dc68w7dslx785"]
+
+[ext_resource type="Script" uid="uid://bqtjgyjqlhbwj" path="res://scripts/investigation/clue.gd" id="1_b6f83"]
+[ext_resource type="PackedScene" uid="uid://cshclpjgxd7c5" path="res://assets/models/scratchedcabinet/scratched_metal_cabinet.glb" id="2_uix6h"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8mwhs"]
+size = Vector3(0.4882202, 0.7529297, 0.41687012)
+
+[node name="ScratchedCabinet" type="StaticBody3D" unique_id=1212142108]
+script = ExtResource("1_b6f83")
+
+[node name="Sketchfab_Scene" parent="." unique_id=366744715 instance=ExtResource("2_uix6h")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1709309543]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0049743652, 0.123535156, 0.18304443)
+shape = SubResource("BoxShape3D_8mwhs")

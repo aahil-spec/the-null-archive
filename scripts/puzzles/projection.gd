@@ -9,7 +9,12 @@ func reveal_projection():
 	
 func interact():
 	if visible and target_machine !=null:
+		if target_machine.is_powered:
+			return "POWER ALREADY ROUTED."
+			
 		target_machine.power_on()
-		queue_free()
-		return "POWER ROUTED TO MACHINE."
+		var auditor=get_tree().get_root().find_child("Auditor",true,false)
+		if auditor:
+			auditor.investigate_location(target_machine)
+		return "POWER ROUTED TO MACHINE. WARNING: DISTURBANCE DETECTED."
 	return ""

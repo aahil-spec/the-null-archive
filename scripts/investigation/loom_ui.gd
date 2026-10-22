@@ -3,6 +3,7 @@ extends Control
 
 @onready var item_list=$Panel/ItemList
 @onready var connect_button=$Panel/Button
+@onready var status_text=$Panel/StatusText
 func _ready():
 	hide()
 	connect_button.pressed.connect(_on_connect_pressed)
@@ -33,7 +34,14 @@ func _on_connect_pressed():
 		var clue1=item_list.get_item_text(selected_indices[0])
 		var clue2=item_list.get_item_text(selected_indices[1])
 		if (clue1=="Broken Terminal" and clue2=="Burnt Fuse") or (clue2=="Broken Terminal" and clue1=="Burnt Fuse"):
+			status_text.text="CAUSAL THREAD STABILIZED"
+			status_text.modulate = Color(0, 1, 0)
 			InvestigationManager.puzzle_solved.emit() 
-			close_loom()
+			await get_tree().create_timer(1.0).timeout
+			hide()
 		else:
-			print("Invalid Causal Thread. These do not connect.")
+			status_text.text="CAUSAL CONTRADICTION: EVENTS INCOMPATIBLE"
+			status_text.modulate = Color(1, 0, 0)
+	else:
+		status_text.text = "ERROR: SELECT EXACTLY TWO TRACES"
+		status_text.modulate = Color(1, 0, 0)

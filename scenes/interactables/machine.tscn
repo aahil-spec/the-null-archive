@@ -1,13 +1,17 @@
 [gd_scene format=3 uid="uid://kq1gtm25sa4i"]
 
 [ext_resource type="Script" uid="uid://lqp67hh883qb" path="res://scripts/puzzles/machine.gd" id="1_q4tad"]
+[ext_resource type="PackedScene" uid="uid://chjqpro14uima" path="res://assets/models/machine/platen_press_reupload.glb" id="2_e5fty"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_4a4bd"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_e5fty"]
+size = Vector3(0.9193115, 1.3322449, 1.0791016)
 
 [node name="Machine" type="StaticBody3D" unique_id=1573396269]
 script = ExtResource("1_q4tad")
 
-[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1366315090]
+[node name="Sketchfab_Scene" parent="." unique_id=1295317591 instance=ExtResource("2_e5fty")]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1232161780]
-shape = SubResource("BoxShape3D_4a4bd")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1489952681]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.074523926, 0.7038727, -0.03955078)
+shape = SubResource("BoxShape3D_e5fty")

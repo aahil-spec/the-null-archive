@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://6l1825fte2iw"]
+
+[ext_resource type="Script" uid="uid://bqtjgyjqlhbwj" path="res://scripts/investigation/clue.gd" id="1_vupo3"]
+[ext_resource type="PackedScene" uid="uid://dslt6q6x6e2mp" path="res://assets/models/chair/chair.glb" id="2_xowoi"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6wupg"]
+size = Vector3(0.41656494, 1, 0.49853516)
+
+[node name="DisplacedChair" type="StaticBody3D" unique_id=1212142108]
+script = ExtResource("1_vupo3")
+
+[node name="Sketchfab_Scene2" parent="." unique_id=942018479 instance=ExtResource("2_xowoi")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=474273132]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.020355225, 0.54788744, 0.010009766)
+shape = SubResource("BoxShape3D_6wupg")

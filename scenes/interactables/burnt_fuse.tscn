@@ -4,15 +4,15 @@
 [ext_resource type="PackedScene" uid="uid://baiepvwn0vdvr" path="res://assets/models/burntfuse/burned_soviet_fuse_box.glb" id="2_x1nk7"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_x1nk7"]
-size = Vector3(0.8432617, 0.76904297, 0.28735352)
+size = Vector3(0.21716309, 0.18225098, 0.06768799)
 
 [node name="BurntFuse" type="StaticBody3D" unique_id=1212142108]
 script = ExtResource("1_bpos5")
 clue_name = "Burnt Fuse"
 
 [node name="Sketchfab_Scene" parent="." unique_id=2055891068 instance=ExtResource("2_x1nk7")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=673204701]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.004638672, 0.48092508, 0.027954102)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0038452148, 0.12250081, 0.001739502)
 shape = SubResource("BoxShape3D_x1nk7")

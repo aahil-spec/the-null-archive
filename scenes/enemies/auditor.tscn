@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bee4q6yjf3r0t"]
+
+[ext_resource type="Script" uid="uid://b61o4k8ugqq16" path="res://scripts/ai/auditor.gd" id="1_up33e"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_4ucfq"]
+height = 2.5
+
+[node name="Auditor" type="CharacterBody3D" unique_id=2092286429]
+script = ExtResource("1_up33e")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="." unique_id=1152909064]
+height = 2.5
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2065014614]
+shape = SubResource("CylinderShape3D_4ucfq")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=1567971137]
