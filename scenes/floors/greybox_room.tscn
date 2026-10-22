@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://b6e7jcmc5l7vv"]
+
+[ext_resource type="PackedScene" uid="uid://bnhtcoponp8f5" path="res://scenes/player/player.tscn" id="1_15143"]
+[ext_resource type="PackedScene" uid="uid://cfhgiih4botgp" path="res://scenes/ui/loom_ui.tscn" id="3_eqfu2"]
+[ext_resource type="PackedScene" uid="uid://c7vfop7w3x2vn" path="res://scenes/interactables/burnt_fuse.tscn" id="4_o8o37"]
+[ext_resource type="PackedScene" uid="uid://dwfygwaxx8hp7" path="res://scenes/interactables/broken_terminal.tscn" id="5_fjojl"]
+[ext_resource type="Script" uid="uid://jaj75lkp0xa5" path="res://scripts/puzzles/projection.gd" id="5_o8o37"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4d2o8"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_15143"]
+sky_material = SubResource("ProceduralSkyMaterial_4d2o8")
+
+[sub_resource type="Environment" id="Environment_rc61v"]
+background_mode = 2
+sky = SubResource("Sky_15143")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b62s7"]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0.2)
+
+[node name="GreyboxRoom" type="Node3D" unique_id=1544242498]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=167801596]
+environment = SubResource("Environment_rc61v")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=2117726721]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Floor" type="CSGBox3D" parent="." unique_id=2090227694]
+use_collision = true
+size = Vector3(20, 1, 20)
+
+[node name="Player" parent="." unique_id=1335660784 instance=ExtResource("1_15143")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9947184, 0)
+
+[node name="LoomUI" parent="." unique_id=791361195 instance=ExtResource("3_eqfu2")]
+
+[node name="GhostProjection" type="CSGSphere3D" parent="." unique_id=1268505562 node_paths=PackedStringArray("exit_door")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.646678, 0.87150574, 3.170855)
+visible = false
+use_collision = true
+material = SubResource("StandardMaterial3D_b62s7")
+script = ExtResource("5_o8o37")
+exit_door = NodePath("../ExitDoor")
+
+[node name="ExitDoor" type="CSGBox3D" parent="." unique_id=1573206546]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0717041, 9.457155)
+use_collision = true
+size = Vector3(4, 3, 0.5)
+
+[node name="BurntFuse" parent="." unique_id=1212142108 instance=ExtResource("4_o8o37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.48243737, 0)
+
+[node name="BrokenTerminal" parent="." unique_id=1862685576 instance=ExtResource("5_fjojl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0027313, 0.5994865, 0)
