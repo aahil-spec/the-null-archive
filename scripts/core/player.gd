@@ -9,12 +9,19 @@ var gravity=ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var raycast=$Head/Camera3D/RayCast3D
 @onready var crosshair=$HUD/Crosshair
 @onready var message=$HUD/Message
+@onready var action_prompt=$HUD/ActionPrompt
+@onready var mode_display=$HUD/ModeDisplay
 
+var tool_mode:String="Imprint"
 func _ready():
 	Input.mouse_mode=Input.MOUSE_MODE_CAPTURED
-	hide()
 func _unhandled_input(event):
-	if event is InputEventMouseMotion:
+	if Input.is_action_just_pressed("ui_cancel"):
+		if Input.mouse_mode==Input.MOUSE_MODE_CAPTURED:
+			Input.mouse_mode=Input.MOUSE_MODE_VISIBLE
+		else:
+			Input.mouse_mode=Input.MOUSE_MODE_CAPTURED
+	if event is InputEventMouseMotion and Input.mouse_mode==Input.MOUSE_MODE_CAPTURED:
 		rotate_y(-event.relative.x*0.005)
 		head.rotate_x(-event.relative.y*0.005)
 		head.rotation.x=clamp(head.rotation.x,deg_to_rad(-80),deg_to_rad(80))
@@ -36,14 +43,27 @@ func _physics_process(delta):
 	move_and_slide()
 @warning_ignore("unused_parameter")
 func _process(delta):
-	crosshair.text="+"
+	if Input.is_action_just_pressed("toggle_mode"):
+		if tool_mode=="Imprint":
+			tool_mode="Sound"
+		else:
+			tool_mode="Imprint"
+	mode_display.text="LOOM MODE:" +tool_mode.to_upper()
+	action_prompt.text=""
 	if raycast.is_colliding():
 		var target=raycast.get_collider()
 		if target.has_method("interact"):
-			crosshair.text="[E] Interact"
-			if Input.is_action_just_pressed("interact"):
-				if "clue_name" in target:
-					message.text="SCAN IMPRINT:"+target.clue_name
+			if "clue_type" in target:
+				if target.clue_type==tool_mode:
+					action_prompt.text="[E] Scan " + target.clue_type
+					if Input.is_action_just_pressed("interact"):
+						message.text="EXTRACTED"  + target.clue_type.to_upper()+ ": " + target.clue_name
+						target.interact()
 				else:
-					message.text="GHOST SWITCH ACTIVATED"
-				target.interact()
+					action_prompt.text= "(Requires " + target.clue_type + " Mode)"
+			else:
+				action_prompt.text ="[E] Interact"
+				if Input.is_action_just_pressed("interact"):
+					var response = target.interact()
+					if response is String:
+						message.text=response

@@ -1,4 +1,5 @@
 extends StaticBody3D
+@export_enum("Imprint","Sound") var clue_type:String="Imprint"
 
 @export var clue_name:String="Broken Terminal"
 var has_been_scanned:bool=false

@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://kq1gtm25sa4i"]
+
+[ext_resource type="Script" uid="uid://lqp67hh883qb" path="res://scripts/puzzles/machine.gd" id="1_q4tad"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4a4bd"]
+
+[node name="Machine" type="StaticBody3D" unique_id=1573396269]
+script = ExtResource("1_q4tad")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1366315090]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1232161780]
+shape = SubResource("BoxShape3D_4a4bd")
