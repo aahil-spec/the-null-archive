@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dsta2tqounee1"]
+
+[ext_resource type="PackedScene" uid="uid://dyxlkjgs6gr78" path="res://scenes/interactables/clue_base.tscn" id="1_b5sv5"]
+[ext_resource type="PackedScene" uid="uid://bynjtxmfywq6w" path="res://assets/models/securitylog/security_keypad.glb" id="2_vcgqb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b5sv5"]
+size = Vector3(0.2663269, 0.3736801, 0.073791504)
+
+[node name="SecurityLog" unique_id=332557452 instance=ExtResource("1_b5sv5")]
+clue_name = "Security Log: Door forced open"
+
+[node name="CollisionShape3D" parent="." index="0" unique_id=2146113170]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.028244019, 0.24271011, 0.0035095215)
+shape = SubResource("BoxShape3D_b5sv5")
+
+[node name="Sketchfab_Scene" parent="." index="1" unique_id=1147825561 instance=ExtResource("2_vcgqb")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)

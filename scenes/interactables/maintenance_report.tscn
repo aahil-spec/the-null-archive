@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://ckmiyo2jj8l5f"]
+
+[ext_resource type="PackedScene" uid="uid://dyxlkjgs6gr78" path="res://scenes/interactables/clue_base.tscn" id="1_ag3lg"]
+[ext_resource type="PackedScene" uid="uid://hy51w44a2163" path="res://assets/models/maintenance report/clipboard.glb" id="2_4eqwv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7sid2"]
+size = Vector3(0.22949219, 0.019821167, 0.34539795)
+
+[node name="MaintenanceReport" unique_id=332557452 instance=ExtResource("1_ag3lg")]
+clue_name = "Maintenance Report: Lock removed"
+
+[node name="CollisionShape3D" parent="." index="0" unique_id=2146113170]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00048828125, 0.008583069, 0.0005187988)
+shape = SubResource("BoxShape3D_7sid2")
+
+[node name="Sketchfab_Scene" parent="." index="1" unique_id=1380312455 instance=ExtResource("2_4eqwv")]

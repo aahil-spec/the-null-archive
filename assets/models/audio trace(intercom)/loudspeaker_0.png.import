@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://csjffwgifsaxp"
-path.s3tc="res://.godot/imported/floor_white_tile_2x2_meters_0.png-8547967c85c2e698228293ee5d9b96a7.s3tc.ctex"
+uid="uid://br3700s8oq4u3"
+path.s3tc="res://.godot/imported/loudspeaker_0.png-6ac77052369bde63044cbd33163b960d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "c6eb5b43939c40060e93a90ef4206192"
+"md5": "c926a1b862e2b26a00dcab9850d7a9ef"
 }
 
 [deps]
 
-source_file="res://assets/models/machine/floor_white_tile_2x2_meters_0.png"
-dest_files=["res://.godot/imported/floor_white_tile_2x2_meters_0.png-8547967c85c2e698228293ee5d9b96a7.s3tc.ctex"]
+source_file="res://assets/models/audio trace(intercom)/loudspeaker_0.png"
+dest_files=["res://.godot/imported/loudspeaker_0.png-6ac77052369bde63044cbd33163b960d.s3tc.ctex"]
 
 [params]
 
@@ -25,12 +25,12 @@ compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
-compress/normal_map=1
+compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=1
-roughness/src_normal="res://assets/models/machine/floor_white_tile_2x2_meters_0.png"
+roughness/mode=0
+roughness/src_normal=""
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2

@@ -34,14 +34,21 @@ func _on_connect_pressed():
 		var clue1=item_list.get_item_text(selected_indices[0])
 		var clue2=item_list.get_item_text(selected_indices[1])
 		if (clue1=="Broken Terminal" and clue2=="Burnt Fuse") or (clue2=="Broken Terminal" and clue1=="Burnt Fuse"):
-			status_text.text="CAUSAL THREAD STABILIZED"
-			status_text.modulate = Color(0, 1, 0)
-			InvestigationManager.puzzle_solved.emit() 
-			await get_tree().create_timer(1.0).timeout
-			hide()
+			success_sequence()
+		elif (clue1=="Maintenance Report: Lock removed" and clue2 == "Audio Trace: Door sliding smoothly") or (clue2 == "Maintenance Report: Lock removed" and clue1 == "Audio Trace: Door sliding smoothly"):
+			success_sequence()
+		elif "Security Log" in clue1 or "Security Log" in clue2:
+			status_text.text="CAUSAL CONTRADICTION: PHYSICAL IMPOSSIBILITY DETECTED"
+			status_text.modulate= Color(1,0,0)
 		else:
-			status_text.text="CAUSAL CONTRADICTION: EVENTS INCOMPATIBLE"
-			status_text.modulate = Color(1, 0, 0)
+			status_text.text="EVENTS INCOMPATIBLE"
+			status_text.modulate=Color(1,0,0)
 	else:
 		status_text.text = "ERROR: SELECT EXACTLY TWO TRACES"
 		status_text.modulate = Color(1, 0, 0)
+func success_sequence():
+	status_text.text="CAUSAL THREAD STABILIZED"
+	status_text.modulate=Color(0,1,0)
+	InvestigationManager.puzzle_solved.emit()
+	await get_tree().create_timer(1,0).timeout
+	hide()

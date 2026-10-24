@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dyxlkjgs6gr78"]
+
+[ext_resource type="Script" uid="uid://bqtjgyjqlhbwj" path="res://scripts/investigation/clue.gd" id="1_b5w7t"]
+
+[node name="ClueBase" type="StaticBody3D" unique_id=332557452]
+script = ExtResource("1_b5w7t")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2146113170]

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://b45r0kamfhgvd"
-path="res://.godot/imported/floor_white_tile_2x2_meters.glb-0907e9f06f55ecb53094626af722fa53.scn"
+uid="uid://hy51w44a2163"
+path="res://.godot/imported/clipboard.glb-f7d6e915af6b2813ba3aace10f87a3e3.scn"
 
 [deps]
 
-source_file="res://assets/models/machine/floor_white_tile_2x2_meters.glb"
-dest_files=["res://.godot/imported/floor_white_tile_2x2_meters.glb-0907e9f06f55ecb53094626af722fa53.scn"]
+source_file="res://assets/models/maintenance report/clipboard.glb"
+dest_files=["res://.godot/imported/clipboard.glb-f7d6e915af6b2813ba3aace10f87a3e3.scn"]
 
 [params]
 

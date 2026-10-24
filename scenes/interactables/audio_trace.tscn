@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://ds7hqhgcxcveq"]
+
+[ext_resource type="PackedScene" uid="uid://dyxlkjgs6gr78" path="res://scenes/interactables/clue_base.tscn" id="1_cggjo"]
+[ext_resource type="PackedScene" uid="uid://1q1wsred877h" path="res://assets/models/audio trace(intercom)/loudspeaker.glb" id="2_q7lj7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qgqth"]
+size = Vector3(0.23583984, 0.31628418, 0.11425781)
+
+[node name="AudioTrace" unique_id=332557452 instance=ExtResource("1_cggjo")]
+clue_type = "Sound"
+clue_name = "Audio Trace: Door sliding smoothly"
+
+[node name="CollisionShape3D" parent="." index="0" unique_id=2146113170]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0017089844, -0.03265381, 0.03466797)
+shape = SubResource("BoxShape3D_qgqth")
+
+[node name="Sketchfab_Scene" parent="." index="1" unique_id=743889704 instance=ExtResource("2_q7lj7")]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
