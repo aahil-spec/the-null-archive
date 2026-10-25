@@ -16,24 +16,21 @@ The Loom is your investigation tool used to observe and reconstruct the past. Cu
 .    imprint Scan:Extract traces form objects (e.g., impact direction, heat,frictione).
 .    Causal Therads (Basic): Connent clues to establish of cause and effect.
 Floor 01: Intake
-The foundational level where players learn the core mechanics.
-.    Aeeival Hub:Centeal elevatoe access and safe exploratino.
-.    Power Control Puzzle: Reconstruct a simple power failure using
-     environmental clues to open sealed route.
+. To Play first find the broken terminal on a desk scan and then scan the blue pipe to scan it you have to go in sound mode using the button "Q" and then find the burnt fuse on the wall scan it then find the recorder on another desk and scan it too then open the loom ui by clicking TAB then connect broken terminal with burnt fuse after that a ghost projection will apear near the spawn point a yellow ball click it the machine will start 
+then click the machine 3 times fast otherwise the auditor will come and close the machine after 3 clicks on the machine the door will get unlocked open it and then click the teleportation button.
 Floor 02:Recoeds
-A sterile, bureaucratic level focusing on logic document comparison and the evidence graph.
-. The Central Archive: Explore an abandoned data-storage hall to find conflicting official reports.
-. The Observation Lab (Incident Scene): Investigate a damaged experimental chamber to find physical traces that
-  contradict the official paperwork.
-. Case Management Office: A safe hub to connect casual threads and deduce which events mathematically and physically
-  occurred
+.To play find the spekaer on the wall scan it then find a clipboard in the rack scan it and connect both using loom ui
+there are many more clues so the player gets confuse what to connect 
+so after connecting them the door will open go there interact and read the file and pick the floor 3 key.
+Floor 3 (IN PROGRESS)
 
   # Controls (Default)
   . W,A,S,D: Move
   . Mouse: Look around
-  . E/Left Click(Hold): Equip/Aim Causality Loom
-  . F: Toogle Loom Modes(Scan,Connect)
-  . Tab: Open Caseboard/Evidence Graph
+  . E:Interact
+  . Q: Toogle Modes
+  . Tab: Open LOOM UI
+  . Space:Jump
 
   # ScreenShorts
 <img width="1366" height="768" alt="11" src="https://github.com/user-attachments/assets/1aed3863-15d6-47b5-8f8e-57f9a8ea2498" />
@@ -48,4 +45,11 @@ A sterile, bureaucratic level focusing on logic document comparison and the evid
 <img width="1366" height="727" alt="1" src="https://github.com/user-attachments/assets/0d4b577b-65cf-4efd-9adf-597d690fe12d" />
 <img width="1366" height="725" alt="13" src="https://github.com/user-attachments/assets/f38f3650-8af0-4796-9957-d0036e69cae5" />
 <img width="1366" height="727" alt="12" src="https://github.com/user-attachments/assets/ad22fba5-df18-4bbb-9c46-1b911b520c08" />
+<img width="936" height="530" alt="Screenshot 2026-10-26 014021" src="https://github.com/user-attachments/assets/e7de0401-779e-4ebd-b66a-d9a8206236c4" />
+<img width="927" height="532" alt="Screenshot 2026-10-26 014213" src="https://github.com/user-attachments/assets/97b324e2-c234-4232-9db2-788d6e0f59c2" />
+<img width="913" height="507" alt="Screenshot 2026-10-26 014200" src="https://github.com/user-attachments/assets/97aafa82-6fd6-4f16-add2-44acdd4eb552" />
+<img width="932" height="518" alt="Screenshot 2026-10-26 014139" src="https://github.com/user-attachments/assets/c07d2b43-e780-40d7-8f15-68e25cb21474" />
+<img width="927" height="522" alt="Screenshot 2026-10-26 014115" src="https://github.com/user-attachments/assets/ae675b29-096e-4b68-86e5-cba6e105de88" />
+<img width="927" height="510" alt="Screenshot 2026-10-26 014047" src="https://github.com/user-attachments/assets/37ddbe76-5267-4a76-94b5-2e08e8ed6106" />
+<img width="922" height="517" alt="Screenshot 2026-10-26 014033" src="https://github.com/user-attachments/assets/9505d29c-49d8-4c4a-aba9-8678e242d7c9" />
 
