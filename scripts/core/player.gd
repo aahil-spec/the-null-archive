@@ -57,7 +57,7 @@ func _process(delta):
 				if target.clue_type==tool_mode:
 					action_prompt.text="[E] Scan " + target.clue_type
 					if Input.is_action_just_pressed("interact"):
-						message.text="EXTRACTED"  + target.clue_type.to_upper()+ ": " + target.clue_name
+						message.text="EXTRACTED "  + target.clue_type.to_upper()+ ": " + target.clue_name
 						target.interact()
 				else:
 					action_prompt.text= "(Requires " + target.clue_type + " Mode)"

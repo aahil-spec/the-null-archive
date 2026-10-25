@@ -5,9 +5,10 @@ extends StaticBody3D
 var is_powered:bool=false
 var current_stage:int=0
 
+@onready var anim_player=$Sketchfab_Scene/AnimationPlayer
 func power_on():
 	is_powered=true
-	
+	anim_player.play("Animation")
 func interact():
 	if not is_powered:
 		return "ERROR: NO POWER> REQUIRES CASUAL ANCHOR."
@@ -17,10 +18,12 @@ func interact():
 		
 		if current_stage==3:
 			if exit_door!=null:
-				exit_door.queue_free()
+				if exit_door.has_method("unlock"):
+					exit_door.unlock()
 			return "ALL STAGES LINKED. DOOR OPENED."
 		return "MACHINE STAGE " + str(current_stage) + " ACTIVATED."
 	return "MACHINE ALREADY ACTIVE."
 func power_off():
 	is_powered=false
 	current_stage=0
+	anim_player.stop()

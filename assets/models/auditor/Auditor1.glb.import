@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://b2a3fmtbuc7gb"
-path="res://.godot/imported/auditor.glb-ee76f6db21f8d44e357930d4c97b69e0.scn"
+uid="uid://cpt35jeqw2mev"
+path="res://.godot/imported/Auditor1.glb-e78469f466e4f4a9c4e067fa8fac5003.scn"
 
 [deps]
 
-source_file="res://assets/models/auditor/auditor.glb"
-dest_files=["res://.godot/imported/auditor.glb-ee76f6db21f8d44e357930d4c97b69e0.scn"]
+source_file="res://assets/models/auditor/Auditor1.glb"
+dest_files=["res://.godot/imported/Auditor1.glb-e78469f466e4f4a9c4e067fa8fac5003.scn"]
 
 [params]
 
@@ -39,7 +39,7 @@ materials/extract_format=0
 materials/extract_path=""
 _subresources={
 "animations": {
-"CrouchedWalking2": {
+"SleepingIdle": {
 "save_to_file/enabled": false,
 "save_to_file/fallback_path": "",
 "save_to_file/keep_custom_tracks": "",
@@ -2095,7 +2095,7 @@ _subresources={
 "slice_99/start_frame": 0,
 "slices/amount": 0
 },
-"SleepingIdle": {
+"Walking": {
 "save_to_file/enabled": false,
 "save_to_file/fallback_path": "",
 "save_to_file/keep_custom_tracks": "",

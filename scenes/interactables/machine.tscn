@@ -9,9 +9,32 @@ size = Vector3(1.8, 2.6, 2)
 [node name="Machine" type="StaticBody3D" unique_id=1573396269]
 script = ExtResource("1_q4tad")
 
-[node name="Sketchfab_Scene" parent="." unique_id=1295317591 instance=ExtResource("2_e5fty")]
+[node name="Sketchfab_Scene" parent="." unique_id=808636104 instance=ExtResource("2_e5fty")]
 transform = Transform3D(0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02, 0, 0, 0)
+
+[node name="Skeleton3D" parent="Sketchfab_Scene/Sketchfab_model/c26ae518f31b448384b195b23f55b493_fbx/Object_2/RootNode/Platen_Rig/Platen_JNT_HRC/Object_8" parent_id_path=PackedInt32Array(808636104, 2076383549) index="0" unique_id=715704026]
+bones/4/rotation = Quaternion(-0.042497307, 0.70582867, -0.04249731, 0.7058286)
+bones/5/rotation = Quaternion(0.50443447, 0.8634501, 5.2853615e-17, 3.091758e-17)
+bones/6/rotation = Quaternion(-0.13496739, 0.6941065, -0.13496739, 0.6941065)
+bones/7/position = Vector3(28.93065, 1.4210855e-14, 0.0008295819)
+bones/7/rotation = Quaternion(5.7948564e-06, -1.4337423e-05, 8.308375e-11, 1)
+bones/8/rotation = Quaternion(0.13482131, -0.6941143, 0.13486293, 0.6941474)
+bones/9/rotation = Quaternion(0.7781634, 5.854594e-17, 2.3136222e-17, -0.628062)
+bones/10/rotation = Quaternion(0.7781634, 5.854594e-17, 2.3136222e-17, -0.628062)
+bones/11/rotation = Quaternion(7.660958e-09, -1.3766269e-10, -0.1657899, 0.9861612)
+bones/12/rotation = Quaternion(-4.5084884e-23, 2.5561127e-19, 0.00016990748, 1)
+bones/14/rotation = Quaternion(0.25394723, -0.65993243, 0.25394723, 0.65993243)
+bones/15/rotation = Quaternion(0.00029107017, 0, 0, 1)
+bones/16/rotation = Quaternion(0.034899503, 0, 0, 0.9993909)
+bones/17/rotation = Quaternion(-0.040255763, 0, 0, 0.9991895)
+bones/18/rotation = Quaternion(0.034899503, 0, 0, 0.9993909)
+bones/19/rotation = Quaternion(0.01864183, 0.706861, 0.01864183, 0.706861)
+bones/20/rotation = Quaternion(0.24351901, 0.96989614, 4.440892e-16, 0)
+bones/21/rotation = Quaternion(0.5081176, 0.8612877, 3.2063474e-16, 1.4008337e-17)
+bones/23/rotation = Quaternion(0.46425357, 0.8857024, 1.1958771e-16, -9.6255044e-17)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1489952681]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.074523926, 1.4424884, -0.18888068)
 shape = SubResource("BoxShape3D_e5fty")
+
+[editable path="Sketchfab_Scene"]

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="The Null Archive"
-run/main_scene="uid://b6e7jcmc5l7vv"
+run/main_scene="uid://tc637fk2q58a"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 

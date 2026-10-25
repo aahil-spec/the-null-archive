@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
 
-const SPEED = 5.0
+const SPEED = 2.5
 @onready var nav_agent=$NavigationAgent3D
 var current_target_node:Node3D=null
 var home_position:Vector3
@@ -15,14 +15,14 @@ func _ready():
 func investigate_location(target_node:Node3D):
 	current_target_node=target_node
 	nav_agent.target_position = target_node.global_position
-	anim_player.play("CrouchedWalking2")
+	anim_player.play("Walking")
 	
 	
 @warning_ignore("unused_parameter")
 func _physics_process(delta):
 	if is_sabotaging:
 		return
-	if nav_agent.is_navigation_finished():
+	if nav_agent.is_navigation_finished() or global_position.distance_to(nav_agent.target_position)<1.5:
 		if current_target_node!=null:
 			sabotage_machine() 
 		else:
@@ -38,12 +38,12 @@ func _physics_process(delta):
 	velocity=new_velocity
 	move_and_slide()
 func sabotage_machine():
-	is_sabotaging=false
-	anim_player.play("CrouchedWalking")
+	is_sabotaging=true
+	anim_player.play("button")
 	if current_target_node.has_method("power_off"):
 		current_target_node.power_off()
 	await anim_player.animation_finished
 	is_sabotaging=false
 	current_target_node=null
 	nav_agent.target_position=home_position
-	anim_player.play("CrouchedWalking2")
+	anim_player.play("Walking")
