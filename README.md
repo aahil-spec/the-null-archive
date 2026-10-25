@@ -15,14 +15,14 @@ The Causality Loom (Core Mechanic)
 The Loom is your investigation tool used to observe and reconstruct the past. Currently implemented features include
 .    imprint Scan:Extract traces form objects (e.g., impact direction, heat,frictione).
 .    Causal Therads (Basic): Connent clues to establish of cause and effect.
-Floor 01: Intake
+# Floor 01: Intake
 . To Play first find the broken terminal on a desk scan and then scan the blue pipe to scan it you have to go in sound mode using the button "Q" and then find the burnt fuse on the wall scan it then find the recorder on another desk and scan it too then open the loom ui by clicking TAB then connect broken terminal with burnt fuse after that a ghost projection will apear near the spawn point a yellow ball click it the machine will start 
 then click the machine 3 times fast otherwise the auditor will come and close the machine after 3 clicks on the machine the door will get unlocked open it and then click the teleportation button.
-Floor 02:Recoeds
+# Floor 02:Recoeds
 .To play find the spekaer on the wall scan it then find a clipboard in the rack scan it and connect both using loom ui
 there are many more clues so the player gets confuse what to connect 
 so after connecting them the door will open go there interact and read the file and pick the floor 3 key.
-Floor 3 (IN PROGRESS)
+# Floor 3 (IN PROGRESS)
 
   # Controls (Default)
   . W,A,S,D: Move
