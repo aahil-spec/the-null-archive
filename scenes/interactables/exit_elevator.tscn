@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://s10rxbhayxk5"]
+
+[ext_resource type="PackedScene" uid="uid://bkm02dclrugb4" path="res://scenes/interactables/teleportation_button.tscn" id="1_1d2oi"]
+[ext_resource type="Script" uid="uid://c2y1vidqdj27x" path="res://scripts/puzzles/exit_elevator.gd" id="2_yadkk"]
+
+[node name="ExitElevator" unique_id=2064785570 instance=ExtResource("1_1d2oi")]
+script = ExtResource("2_yadkk")
+
+[editable path="Sketchfab_Scene"]

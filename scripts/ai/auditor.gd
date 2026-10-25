@@ -39,10 +39,13 @@ func _physics_process(delta):
 	move_and_slide()
 func sabotage_machine():
 	is_sabotaging=true
-	anim_player.play("button")
-	if current_target_node.has_method("power_off"):
+	if current_target_node.has_node("power_off"):
+		anim_player.play("button")
 		current_target_node.power_off()
-	await anim_player.animation_finished
+		await anim_player.animation_finished
+	else:
+		anim_player.play("Idle")
+		await get_tree().create_timer(3.0).timeout
 	is_sabotaging=false
 	current_target_node=null
 	nav_agent.target_position=home_position

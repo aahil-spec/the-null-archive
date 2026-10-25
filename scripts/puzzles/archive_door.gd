@@ -16,3 +16,6 @@ func open_door():
 	is_open=true
 	var tween=get_tree().create_tween()
 	tween.tween_property(self,"rotation_degrees",rotation_degrees+Vector3(0,78.8,0),2.0)
+	var auditor=get_tree().get_root().find_child("Auditor",true,false)
+	if auditor:
+		auditor.investigate_location(self)
