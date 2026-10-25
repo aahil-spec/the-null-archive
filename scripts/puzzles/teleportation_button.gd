@@ -1,7 +1,7 @@
 extends StaticBody3D
 
 
-const NEXT_FLOOR_PATH="res://scenes/floors/floor_2.tscn"
+const NEXT_FLOOR_PATH="res://scenes/floors/floor_2.scn"
 
 func interact():
 	var error =get_tree().change_scene_to_file(NEXT_FLOOR_PATH)

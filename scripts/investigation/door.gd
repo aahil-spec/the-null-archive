@@ -16,6 +16,6 @@ func interact():
 	else:
 		return "DOOR IS ALREADY OPEN."
 func open_door():
-	var hinge=get_parent()
+	
 	var tween=get_tree().create_tween()
-	tween.tween_property(hinge,"rotation_degrees",rotation_degrees+Vector3(0,78.8,0),2.0)
+	tween.tween_property(self,"rotation_degrees",rotation_degrees+Vector3(0,78.8,0),2.0)
