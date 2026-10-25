@@ -26,10 +26,15 @@ so after connecting them the door will open go there interact and read the file 
 
   # Controls (Default)
   . W,A,S,D: Move
+  
   . Mouse: Look around
+  
   . E:Interact
+  
   . Q: Toogle Modes
+  
   . Tab: Open LOOM UI
+  
   . Space:Jump
 
   # ScreenShorts
