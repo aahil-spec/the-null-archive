@@ -514,9 +514,10 @@ data = PackedVector3Array(-0.15879999, 0.8469, 0.9137, 0.1859, -0.8469, 0.9137, 
 [sub_resource type="BoxShape3D" id="BoxShape3D_x6ek6"]
 size = Vector3(0.3725586, 0.107421875, 0.3619995)
 
-[node name="MainBreaker" type="StaticBody3D" unique_id=888268925 node_paths=PackedStringArray("anim_player")]
+[node name="MainBreaker" type="StaticBody3D" unique_id=888268925 node_paths=PackedStringArray("anim_player", "cover_collision")]
 script = ExtResource("1_2gb8c")
 anim_player = NodePath("Sketchfab_Scene/AnimationPlayer")
+cover_collision = NodePath("CollisionShape3D")
 
 [node name="Sketchfab_Scene" type="Node3D" parent="." unique_id=1769756908]
 
