@@ -17,3 +17,5 @@ shape = SubResource("CylinderShape3D_hxlnw")
 
 [node name="Sketchfab_Scene" parent="." index="1" unique_id=1646972750 instance=ExtResource("2_hxlnw")]
 transform = Transform3D(0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, 0, 0, 0)
+
+[node name="Camera2D" type="Camera2D" parent="." index="2" unique_id=831204506]
