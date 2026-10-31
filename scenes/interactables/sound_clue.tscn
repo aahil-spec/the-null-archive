@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://b6ebq7im0jguj"]
+
+[ext_resource type="PackedScene" uid="uid://dyxlkjgs6gr78" path="res://scenes/interactables/clue_base.tscn" id="1_b3q36"]
+[ext_resource type="PackedScene" uid="uid://bpgdirmet3g7y" path="res://assets/models/Sound clue(Clamp)/freebie_-_game_art_sci_fi_clamp.glb" id="2_hxlnw"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_hxlnw"]
+height = 0.15356445
+radius = 0.40429688
+
+[node name="SoundClue" unique_id=332557452 instance=ExtResource("1_b3q36")]
+clue_type = "Sound"
+clue_name = "08:12 AM - Primary valve"
+
+[node name="CollisionShape3D" parent="." index="0" unique_id=2146113170]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, -0.006682454, 0.008221388)
+shape = SubResource("CylinderShape3D_hxlnw")
+
+[node name="Sketchfab_Scene" parent="." index="1" unique_id=1646972750 instance=ExtResource("2_hxlnw")]
+transform = Transform3D(0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, 0, 0, 0)
