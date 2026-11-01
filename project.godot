@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 InvestigationManager="*uid://dmd2xkilsdls4"
 TransitionScreen="*uid://d1icalbiumlei"
+SaveManager="*uid://bhct5251vui1h"
 
 [editor_plugins]
 
