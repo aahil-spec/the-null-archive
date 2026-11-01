@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 InvestigationManager="*uid://dmd2xkilsdls4"
+GlobalSignals="*uid://l7ntatf7uao6"
 
 [editor_plugins]
 

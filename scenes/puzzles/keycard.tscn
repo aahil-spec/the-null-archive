@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://npibe37cfukc"]
+
+[ext_resource type="Script" uid="uid://4bktfmhbye1n" path="res://scripts/core/keycard.gd" id="1_8x2il"]
+[ext_resource type="PackedScene" uid="uid://bnjuknof4b1fn" path="res://assets/models/keycard/key_card.glb" id="2_ff8sh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ff8sh"]
+size = Vector3(0.40189767, 0.2934345, 0.020520449)
+
+[node name="Keycard" type="StaticBody3D" unique_id=487529629]
+script = ExtResource("1_8x2il")
+
+[node name="Sketchfab_Scene" parent="." unique_id=1670407874 instance=ExtResource("2_ff8sh")]
+transform = Transform3D(0.001, 0, 0, 0, 0.001, 0, 0, 0, 0.001, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=588446551]
+transform = Transform3D(-7.54979e-08, -4.3711392e-08, -1, -1, -4.371139e-08, 7.54979e-08, -4.3711392e-08, 1, -4.371139e-08, 6.3116486e-06, 0.0012651682, -0.0011553781)
+shape = SubResource("BoxShape3D_ff8sh")
+
+[editable path="Sketchfab_Scene"]

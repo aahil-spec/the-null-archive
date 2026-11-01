@@ -2,6 +2,7 @@ extends Node
 
 @warning_ignore("unused_signal")
 signal puzzle_solved()
+signal acoustics_puzzle_solved
 var collected_clues:Array[String]=[]
 var has_level_3_key:bool=false
 func add_clue(clue_name:String):
