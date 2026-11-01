@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://dd621tkadfqu"]
+
+[ext_resource type="PackedScene" uid="uid://dcu4ci8s4js6w" path="res://assets/sci-fi_wall (4).glb" id="1_4uakp"]
+
+[node name="floor_7" type="Node3D" unique_id=1700788196]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=1622408588]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9946251, 0)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D" unique_id=406914450]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.902588, 0.984066, -23.625305)
+size = Vector3(26.194824, 5, 87.25061)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1187233419]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16937256, 0.8921323, -16.11621)
+operation = 2
+size = Vector3(6.6070557, 4.8, 71.23242)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1398525427]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.6641774, 0.8916929, 17.378418)
+operation = 2
+size = Vector3(2.4553833, 4.800879, 4.243164)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="CSGCombiner3D" unique_id=770455487]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.6641774, 0.8916929, -9.930019)
+operation = 2
+size = Vector3(2.4553833, 4.800879, 4.243164)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="CSGCombiner3D" unique_id=841454646]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.6641774, 0.8916929, -28.381908)
+operation = 2
+size = Vector3(2.4553833, 4.800879, 4.243164)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1092148442]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.6641774, 0.8916929, -48.591866)
+operation = 2
+size = Vector3(2.4553833, 4.800879, 4.243164)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1352011216]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.040684, 0.95183706, 10.191786)
+operation = 2
+size = Vector3(14.446327, 4.8951173, 18.558365)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1320735178]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.040684, 0.95183706, -10.401924)
+operation = 2
+size = Vector3(14.446327, 4.8951173, 18.558365)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="CSGCombiner3D" unique_id=991756879]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.040684, 0.95183706, -31.06785)
+operation = 2
+size = Vector3(14.446327, 4.8951173, 18.558365)
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1355800811]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.040684, 0.95183706, -50.37037)
+operation = 2
+size = Vector3(14.446327, 4.8951173, 18.558365)
+
+[node name="Sketchfab_Scene" parent="." unique_id=1283130217 instance=ExtResource("1_4uakp")]
+transform = Transform3D(2.739438, 0, 0, 0, 2.2402802, 0, 0, 0, 5.2655416, -11.089259, -0.14840272, 10.131181)
+
+[node name="Sketchfab_Scene5" parent="." unique_id=1140271931 instance=ExtResource("1_4uakp")]
+transform = Transform3D(2.739438, 0, 0, 0, 2.2402802, 0, 0, 0, 5.2655416, -11.089259, -0.14840272, -10.350041)
+
+[node name="Sketchfab_Scene6" parent="." unique_id=709335141 instance=ExtResource("1_4uakp")]
+transform = Transform3D(2.739438, 0, 0, 0, 2.2402802, 0, 0, 0, 5.2655416, -11.089259, -0.14840272, -31.12966)
+
+[node name="Sketchfab_Scene7" parent="." unique_id=1427147828 instance=ExtResource("1_4uakp")]
+transform = Transform3D(2.739438, 0, 0, 0, 2.2402802, 0, 0, 0, 5.2655416, -11.089259, -0.14840272, -50.419838)
+
+[node name="Sketchfab_Scene2" parent="." unique_id=1592305951 instance=ExtResource("1_4uakp")]
+transform = Transform3D(1.4854861, 0, 0, 0, 2.2402802, 0, 0, 0, 6.991895, 0.03183794, -0.14840272, 7.135067)
+
+[node name="Sketchfab_Scene3" parent="." unique_id=53437022 instance=ExtResource("1_4uakp")]
+transform = Transform3D(1.4854861, 0, 0, 0, 2.2402802, 0, 0, 0, 6.991895, 0.03183794, -0.14840272, -17.37658)
+
+[node name="Sketchfab_Scene4" parent="." unique_id=1485675451 instance=ExtResource("1_4uakp")]
+transform = Transform3D(1.4854861, 0, 0, 0, 2.2402802, 0, 0, 0, 6.991895, 0.03183794, -0.14840272, -41.75804)
