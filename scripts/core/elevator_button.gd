@@ -8,12 +8,13 @@ extends StaticBody3D
 @export var door_animation_name:String="CINEMA_4D_Main"
 func interact():
 	if target_floor_scene!="":
-		if anim_player and anim_player.has_animation(door_animation_name):
-			anim_player.play(door_animation_name)
-			await anim_player.animation_finished
-			
-		get_tree().change_scene_to_file(target_floor_scene)
-		
+		_travel_sequence()
 		return "ELEVATOR: " + action_text
 	else:
 		return "ACCESS DENIED: DESTINATION UNAVAILABLE."
+		
+func _travel_sequence():
+	if anim_player and anim_player.has_animation(door_animation_name):
+		anim_player.play(door_animation_name)
+		await anim_player.animation_finished
+	get_tree().change_scene_to_file(target_floor_scene)

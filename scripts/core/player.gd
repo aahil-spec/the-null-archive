@@ -13,6 +13,7 @@ var gravity=ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var mode_display=$HUD/ModeDisplay
 
 var tool_mode:String="Imprint"
+var inventory:Array[String]=[]
 func _ready():
 	Input.mouse_mode=Input.MOUSE_MODE_CAPTURED
 func _unhandled_input(event):
