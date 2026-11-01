@@ -40,6 +40,10 @@ func _on_connect_pressed():
 		elif "Security Log" in clue1 or "Security Log" in clue2:
 			status_text.text="CAUSAL CONTRADICTION: PHYSICAL IMPOSSIBILITY DETECTED"
 			status_text.modulate= Color(1,0,0)
+		elif (clue1 == "Log: Resident evacuated at 10:00 PM" and clue2 == "Physical Trace: Bed slept in at 11:30 PM") or (clue2 == "Log: Resident evacuated at 10:00 PM" and clue1 == "Physical Trace: Bed slept in at 11:30 PM"):
+			status_text.text="CONTRADICTION RESOLVED: TIMELINE FALSIFIED"
+			InvestigationManager.human_factors_solved.emit()
+			success_sequence()
 		else:
 			status_text.text="EVENTS INCOMPATIBLE"
 			status_text.modulate=Color(1,0,0)

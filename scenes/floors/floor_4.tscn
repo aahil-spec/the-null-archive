@@ -7,12 +7,21 @@
 [ext_resource type="PackedScene" uid="uid://dcu4ci8s4js6w" path="res://assets/sci-fi_wall (4).glb" id="5_yk72y"]
 [ext_resource type="PackedScene" uid="uid://bh20hsryqiohr" path="res://assets/door.glb" id="6_i0d34"]
 [ext_resource type="PackedScene" uid="uid://dp8i5j7onc876" path="res://assets/exit_sign_board.glb" id="7_i0d34"]
+[ext_resource type="Script" uid="uid://c8d73y7igw46d" path="res://scripts/puzzles/sound_follow.gd" id="8_wwa7h"]
+[ext_resource type="AudioStream" uid="uid://be3boknkuvfsk" path="res://assets/sound/siz0frena-whispering-322494.mp3" id="9_1cjd2"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i0d34"]
 albedo_texture = ExtResource("1_52qkt")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yk72y"]
 albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Curve3D" id="Curve3D_sd13j"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -3, 3, -4, 0, 0, 0, 0, 0, 0, -3.6543427, 3.1401749, -22.721718, 0, 0, 0, 0, 0, 0, 12.939612, 3.6181695, -22.485771, 0, 0, 0, 0, 0, 0, 12.229788, 3.2928674, -4.0155234),
+"tilts": PackedFloat32Array(0, 0, 0, 0)
+}
+point_count = 4
 
 [node name="floor_4" type="Node3D" unique_id=332833496]
 
@@ -112,3 +121,15 @@ transform = Transform3D(1.7097151, 0, 0, 0, 1.7097151, 0, 0, 0, -2.1393943, 0.10
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5665617, 7.3082542, -8.942234)
 light_energy = 2.0
 omni_range = 4096.0
+
+[node name="Path3D" type="Path3D" parent="." unique_id=1460436578]
+curve = SubResource("Curve3D_sd13j")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="Path3D" unique_id=917600641]
+transform = Transform3D(0.99938977, 0.00026136154, 0.03492869, 1.4551917e-11, 0.9999719, -0.0074825077, -0.034929674, 0.0074779415, 0.9993617, -3, 3, -4)
+script = ExtResource("8_wwa7h")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Path3D/PathFollow3D" unique_id=809050839]
+stream = ExtResource("9_1cjd2")
+autoplay = true
+max_distance = 8.0
