@@ -15,6 +15,9 @@ func interact():
 		
 func _travel_sequence():
 	if anim_player and anim_player.has_animation(door_animation_name):
-		anim_player.play(door_animation_name)
-		await anim_player.animation_finished
-	get_tree().change_scene_to_file(target_floor_scene)
+		anim_player.play_backwards(door_animation_name)
+		var anim_length=anim_player.get_animation(door_animation_name).length
+		var wait_time=max(0,0,anim_length-0.5)
+		if wait_time>0:
+			await get_tree().create_timer(wait_time).timeout
+	TransitionScreen.transition_to_scene(target_floor_scene)

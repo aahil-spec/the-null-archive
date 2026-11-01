@@ -43,8 +43,24 @@ func _on_connect_pressed():
 		else:
 			status_text.text="EVENTS INCOMPATIBLE"
 			status_text.modulate=Color(1,0,0)
+	elif selected_indices.size()==3:
+		var clue1=item_list.get_item_text(selected_indices[0])
+		var clue2=item_list.get_item_text(selected_indices[1])
+		var clue3=item_list.get_item_text(selected_indices[2])
+		var selected_texts=[clue1,clue2,clue3]
+		if "08:12 AM - Primary valve" in selected_texts and "08:14 AM - Secondary release" in selected_texts and "08:15 AM - Final failure" in selected_texts:
+			status_text.text="ACOUSTIC THREAD STABILIZED"
+			status_text.modulate=Color(0,1,0)
+			InvestigationManager.acoustics_puzzle_solved.emit()
+			InvestigationManager.puzzle_solved.emit()
+			await get_tree().create_timer(1.0).timeout
+			close_loom()
+		else:
+			status_text.text="AUDIO SIGNATURES DO NOT ALIGN"
+			status_text.modulate=Color(1,0,0)
+			
 	else:
-		status_text.text = "ERROR: SELECT EXACTLY TWO TRACES"
+		status_text.text = "ERROR: SELECT EXACTLY THE REQUIRED NUMBER OF TRACES"
 		status_text.modulate = Color(1, 0, 0)
 func success_sequence():
 	status_text.text="CAUSAL THREAD STABILIZED"
