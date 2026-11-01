@@ -1,41 +1,57 @@
-# the-null-archive
-The Null Archive is a single-player, first-person mystery thiller built  in Godot 4.You play as an investigator exploring the Meridian Archive-a classified, sealed facility designed to record the physical traces of past event.
+the-null-archive
 
-Armed with an experimental tool called the causality loom, you must reconstruct missing event, manipulate physical machinery by testing past sequences, and uncover the truth behind the faculity's lockdown.
+The Null Archive is a single-player, first-person mystery thriller built in Godot 4. You play as an investigator exploring the Meridian Archive—a classified, sealed facility designed to record the physical traces of past events.
 
-# Current Build Status
+Armed with an experimental tool called the Causality Loom, you must reconstruct missing events, manipulate physical machinery by testing past sequences, and uncover the truth behind the facility's lockdown.
+
+Current Build Status
+
 Version: Prototype/Alpha
-Playable Content: Floor 01 (Intake) and Floor 02 (Records)
+Playable Content: Floor 01 to Floor 05
 
 The game is currently in active development.
-The  foundational movement, scanning mechanics, and the first two mojor narrative  environments are fully playabie
+The foundational movement, scanning mechanics, global save system, and the first five major narrative environments are fully playable.
 
-# Features and Playable Lavels
+Features and Playable Levels
+
 The Causality Loom (Core Mechanic)
-The Loom is your investigation tool used to observe and reconstruct the past. Currently implemented features include
-.    imprint Scan:Extract traces form objects (e.g., impact direction, heat,frictione).
-.    Causal Therads (Basic): Connent clues to establish of cause and effect.
-# Floor 01: Intake
-. To Play first find the broken terminal on a desk scan and then scan the blue pipe to scan it you have to go in sound mode using the button "Q" and then find the burnt fuse on the wall scan it then find the recorder on another desk and scan it too then open the loom ui by clicking TAB then connect broken terminal with burnt fuse after that a ghost projection will apear near the spawn point a yellow ball click it the machine will start 
-then click the machine 3 times fast otherwise the auditor will come and close the machine after 3 clicks on the machine the door will get unlocked open it and then click the teleportation button.
-# Floor 02:Recoeds
-.To play find the spekaer on the wall scan it then find a clipboard in the rack scan it and connect both using loom ui
-there are many more clues so the player gets confuse what to connect 
-so after connecting them the door will open go there interact and read the file and pick the floor 3 key.
-# Floor 3 (IN PROGRESS)
+The Loom is your investigation tool used to observe and reconstruct the past. Currently implemented features include:
+.    Imprint Scan: Extract traces from objects (e.g., impact direction, heat, friction).
+.    Causal Threads (Basic): Connect clues to establish cause and effect.
+.    Persistent Memory: A global save system that remembers solved puzzles and opened routes across sessions.
+.    Seamless Travel: Cinematic elevator transitions with synchronized screen fading.
 
-  # Controls (Default)
-  . W,A,S,D: Move
-  
-  . Mouse: Look around
-  
-  . E:Interact
-  
-  . Q: Toogle Modes
-  
-  . Tab: Open LOOM UI
-  
-  . Space:Jump
+Floor 01: Intake
+
+. To Play first find the broken terminal on a desk scan and then scan the blue pipe. To scan it you have to go in sound mode using the button "Q" and then find the burnt fuse on the wall scan it. Then find the recorder on another desk and scan it too. Open the loom ui by clicking TAB then connect broken terminal with burnt fuse. After that a ghost projection will appear near the spawn point as a yellow ball. Click it and the machine will start.
+Then click the machine 3 times fast otherwise the auditor will come and close the machine. After 3 clicks on the machine the door will get unlocked, open it and then click the teleportation button.
+
+Floor 02: Records
+
+. To play find the speaker on the wall scan it then find a clipboard in the rack scan it and connect both using loom ui.
+There are many more clues so the player gets confused what to connect.
+After connecting them the door will open. Go there, interact and read the file and pick the floor 3 key.
+
+Floor 03: Power and Pressure
+
+. To play, you must first solve the Loom UI puzzle to safely bypass the system locks. Once solved, a sequence of arrows will reveal themselves one by one. Follow the arrows and interact with the three heavy pressure valves in the exact correct order. If you turn a wrong valve, the system fails, forces the valves shut, and the puzzle resets. Turning all three correctly restores power and opens the main pressure door.
+
+Floor 04: Acoustics
+
+. To play, you must investigate the pipes using your audio senses. A moving acoustic anomaly (a looping whisper) travels along an invisible 3D track through the walls and machinery. Find the keycard and leave
+
+Floor 05: Human Factors
+
+. To play, walk down the observation corridor and look through the glass into the simulated twin apartments. You must uncover a physical impossibility. Scan the terminal outside ("Log: Resident evacuated at 10:00 PM") and scan the traces on the messy bed inside ("Physical Trace: Bed slept in at 11:30 PM"). Open your Loom UI and connect these two contradicting clues. The UI will recognize the falsified timeline, and a secret wall panel will smoothly slide into the floor, revealing your next route. (If you close the game and reload, the Save System will remember this wall is open!).
+
+Controls (Default)
+
+. W,A,S,D: Move
+. Mouse: Look around
+. E: Interact
+. Q: Toggle Modes
+. Tab: Open LOOM UI
+. Space: Jump
 
   # ScreenShorts
 <img width="1366" height="768" alt="11" src="https://github.com/user-attachments/assets/1aed3863-15d6-47b5-8f8e-57f9a8ea2498" />
@@ -58,3 +74,7 @@ so after connecting them the door will open go there interact and read the file 
 <img width="927" height="510" alt="Screenshot 2026-10-26 014047" src="https://github.com/user-attachments/assets/37ddbe76-5267-4a76-94b5-2e08e8ed6106" />
 <img width="922" height="517" alt="Screenshot 2026-10-26 014033" src="https://github.com/user-attachments/assets/9505d29c-49d8-4c4a-aba9-8678e242d7c9" />
 
+<img width="1535" height="862" alt="Screenshot 2026-11-02 051855" src="https://github.com/user-attachments/assets/a5ea6637-bc06-4623-8fc0-0685168462c4" />
+<img width="1530" height="862" alt="Screenshot 2026-11-02 051823" src="https://github.com/user-attachments/assets/a3d28754-e6e3-424e-9fdc-79a058a601b2" />
+<img width="1535" height="862" alt="Screenshot 2026-11-02 051752" src="https://github.com/user-attachments/assets/c342d255-5a71-4ab0-b189-c2bee5b0c468" />
+<img width="1535" height="862" alt="Screenshot 2026-11-02 051917" src="https://github.com/user-attachments/assets/12b25d4b-198b-472e-9121-d01fee0c0599" />
