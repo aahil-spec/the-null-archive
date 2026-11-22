@@ -1,54 +1,50 @@
-the-null-archive
+# the-null-archive
 
-The Null Archive is a single-player, first-person mystery thriller built in Godot 4. You play as an investigator exploring the Meridian Archive—a classified, sealed facility designed to record the physical traces of past events.
+The NULL ARCHIVE IS A FIRST PERSON MYSTRY THRILLER THAT IS MADE IN GODOT 4.You play as an investigator who is locked inside a Meridian Archive,that is an underground facility build to record the physical traces of the events that occured in the past.
 
-Armed with an experimental tool called the Causality Loom, you must reconstruct missing events, manipulate physical machinery by testing past sequences, and uncover the truth behind the facility's lockdown.
+Using an experimental tool called the "CASUALITY LOOM" you have to scan objects for left over traces, and figure out what happened while the facility was in lock down.
 
-Current Build Status
+# Current Status
+PLAYABLE : Floors 01 to 05
 
-Version: Prototype/Alpha
-Playable Content: Floor 01 to Floor 05
+# Core Mechanics 
+Imprint Scan: Pull physical traces off objects such as (heat, friction, impact direction, etc)
+Casual Threads: Link clues together in the LOOM UI to figure out the cause and effect.
+Save System: Tracks solved puzzles and unlocked paths even after you close the game (save progress)
+Elevator Transitions: Moves you between different floor with small transitions.
 
-The game is currently in active development.
-The foundational movement, scanning mechanics, global save system, and the first five major narrative environments are fully playable.
+# Playable Levels
 
-Features and Playable Levels
+# Floor 01: 
+When you enter the locked faculty you find a broken terminal on the desk and the player has to scan it. Then switch the mode to sound mode by pressing "Q" and scan the pipe. Find the burnt fuse on the wall and scan it. Locate the recorder on the other desk and scan that too. Now as you have scanned almost everything in the floor so press "TAB"to open the LOOM UI and connect the "broken terminal" to the burnt fuse.
+A yellow ghost will appear near the spawn point. Click it to boot up the machine.
+Click the machine 3 times quickly-if you are too slow, the Auditor will show up and shut it down. Once the door finally unloks, head through the door and hit the teleport button.
 
-The Causality Loom (Core Mechanic)
-The Loom is your investigation tool used to observe and reconstruct the past. Currently implemented features include:
-.    Imprint Scan: Extract traces from objects (e.g., impact direction, heat, friction).
-.    Causal Threads (Basic): Connect clues to establish cause and effect.
-.    Persistent Memory: A global save system that remembers solved puzzles and opened routes across sessions.
-.    Seamless Travel: Cinematic elevator transitions with synchronized screen fading.
+# Floor 2
+This is the floor 2 of the faculty. First, Scan the speaker on the wall and find the clipboard on the rack and scan it. Then, open LOOM UI (TAB) and connect the speaker and the clipboard. (To make the game a bit interesting and hard we have placed extra clues scattered around as red herrings, so ignore those.)
+Now pass through the unlocked door, read the file, and grab Floor 3 key.
 
-Floor 01: Intake
+# Floor 3
+To begin this floor, the player needs to solve the LOOM UI puzzel to bypass the systtem locks.
+Once unlocked, a set of arrows will show up one at a time. The player has to follow the arrows and turn the 3 pressure valves in that exact order. If you mess up the order, the valves slam shut and the puzzle resets. But if you manage to all three valves in order the power will be back and opens the main pressure door.
 
-. To Play first find the broken terminal on a desk scan and then scan the blue pipe. To scan it you have to go in sound mode using the button "Q" and then find the burnt fuse on the wall scan it. Then find the recorder on another desk and scan it too. Open the loom ui by clicking TAB then connect broken terminal with burnt fuse. After that a ghost projection will appear near the spawn point as a yellow ball. Click it and the machine will start.
-Then click the machine 3 times fast otherwise the auditor will come and close the machine. After 3 clicks on the machine the door will get unlocked, open it and then click the teleportation button.
+# Floor 4
+In this floor full of pipe lines the player use another tool calles the audio made("Q") to track the sound and follow it to locate the keycard and exit the floor.
 
-Floor 02: Records
+# Floor 5
+on floor 5 the player has to walk down the observation hallway and look through the glass into the twin text appartments. The player has to scan the scan the terminal outside ("Resident evacuated at 10:00 PM)
+Scan the messy bed inside ("Physical trace:Bed slept in at 11:30 PM)
+OPEN THE LOOM UI and connect the two clues to flag the timeline contradiction.
+A hidden wall panel will drop into the floor, opening the way forward.
 
-. To play find the speaker on the wall scan it then find a clipboard in the rack scan it and connect both using loom ui.
-There are many more clues so the player gets confused what to connect.
-After connecting them the door will open. Go there, interact and read the file and pick the floor 3 key.
+(YOUR SAVE FILE WILL KEEP THIS WALL OPEN IF YOU QUIT AND RELOAD THE GAME) 
 
-Floor 03: Power and Pressure
+The game is still in development. Core movement, scanning, the save system, and the first five floors are playable right now.
 
-. To play, you must first solve the Loom UI puzzle to safely bypass the system locks. Once solved, a sequence of arrows will reveal themselves one by one. Follow the arrows and interact with the three heavy pressure valves in the exact correct order. If you turn a wrong valve, the system fails, forces the valves shut, and the puzzle resets. Turning all three correctly restores power and opens the main pressure door.
-
-Floor 04: Acoustics
-
-. To play, you must investigate the pipes using your audio senses. A moving acoustic anomaly (a looping whisper) travels along an invisible 3D track through the walls and machinery. Find the keycard and leave
-
-Floor 05: Human Factors
-
-. To play, walk down the observation corridor and look through the glass into the simulated twin apartments. You must uncover a physical impossibility. Scan the terminal outside ("Log: Resident evacuated at 10:00 PM") and scan the traces on the messy bed inside ("Physical Trace: Bed slept in at 11:30 PM"). Open your Loom UI and connect these two contradicting clues. The UI will recognize the falsified timeline, and a secret wall panel will smoothly slide into the floor, revealing your next route. (If you close the game and reload, the Save System will remember this wall is open!).
-
-Controls (Default)
-
+# Controls
 . W,A,S,D: Move
 . Mouse: Look around
-. E: Interact
+. E: Interact/Scan
 . Q: Toggle Modes
 . Tab: Open LOOM UI
 . Space: Jump
