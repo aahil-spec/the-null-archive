@@ -1,6 +1,8 @@
 # the-null-archive
 
-The NULL ARCHIVE IS A FIRST PERSON MYSTRY THRILLER THAT IS MADE IN GODOT 4.You play as an investigator who is locked inside a Meridian Archive,that is an underground facility build to record the physical traces of the events that occured in the past.
+The NULL ARCHIVE IS A FIRST PERSON MYSTRY THRILLER THAT IS MADE IN GODOT 4.
+
+You play as an investigator who is locked inside a Meridian Archive,that is an underground facility build to record the physical traces of the events that occured in the past.
 
 Using an experimental tool called the "CASUALITY LOOM" you have to scan objects for left over traces, and figure out what happened while the facility was in lock down.
 
