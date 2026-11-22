@@ -51,6 +51,14 @@ The game is still in development. Core movement, scanning, the save system, and 
 . Tab: Open LOOM UI
 . Space: Jump
 
+How to play:
+
+Open the Project in Godot Engine (v4.6+ recomended)
+Open res://scene/floor_1.tscn.
+Hit play and Investigate the game.
+or Directly click https://aahil1.itch.io/the-null-archive
+
+
   # ScreenShorts
 <img width="1366" height="768" alt="11" src="https://github.com/user-attachments/assets/1aed3863-15d6-47b5-8f8e-57f9a8ea2498" />
 <img width="1363" height="727" alt="10" src="https://github.com/user-attachments/assets/5be86675-1a7b-4de8-82c7-447ed80e8814" />
